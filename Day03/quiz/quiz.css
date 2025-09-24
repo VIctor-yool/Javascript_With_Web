@@ -1,0 +1,11 @@
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+article > nav > ul {
+  display: flex;
+}
+
+article > nav > ul > li {
+}
