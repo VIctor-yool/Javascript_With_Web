@@ -1,0 +1,24 @@
+.swiper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-slide {
+  background-color: red;
+}
+
+.swiper {
+  background-color: orange;
+}
+
+.section3 {
+  background-color: yellow;
+}
+
+.section4 {
+  background-color: green;
+}
+
+.section5 {
+  background-color: red;
+}

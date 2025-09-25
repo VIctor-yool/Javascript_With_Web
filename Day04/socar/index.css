@@ -1,0 +1,36 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+
+  position: relative;
+}
+
+.swiper-slide > img {
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  color: white;
+  position: absolute;
+  z-index: 5;
+}
+.swiper-button-next {
+  color: white;
+}
+
+.swiper__letter {
+  color: white;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.swiper__letter > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.swiper__letter > p {
+  line-height: 25px;
+}

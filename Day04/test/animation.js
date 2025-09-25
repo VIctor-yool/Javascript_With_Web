@@ -1,0 +1,9 @@
+export const keyframes = [
+  { filter: "blur(20px)", opacity: 0, transform: "translateY(30px)" },
+  { filter: "blur(0px)", opacity: 1, transform: "translateY(0px)" },
+];
+
+export const options = {
+  duration: 700,
+  fill: "forwards",
+};
