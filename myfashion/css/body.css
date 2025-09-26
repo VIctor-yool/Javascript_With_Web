@@ -1,0 +1,15 @@
+body {
+  width: 1836px;
+  max-width: 1860px;
+
+  overflow-x: hidden;
+}
+
+#bodyImg {
+  position: fixed;
+  width: 1836px;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  filter: blur(4px);
+}

@@ -5,23 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/headsection.css" />
+    <link rel="stylesheet" href="css/introduce.css" />
+    <script type="module" src="js/index.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div id="loading">
+      <div class="loader"></div>
+      <p>Loading...</p>
+      <div id="loading-first"></div>
+      <div id="loading-second"></div>
+    </div>
+    <div>
+      <img id="bodyImg" src="img/body_img.jpg" alt="" />
+    </div>
     <main>
       <section class="entrance">
         <aside class="sidebar">
-          <i class="hamburger" class="ri-menu-line"></i>
+          <i class="ri-menu-line hamburger"></i>
           <div class="sidebar__menu">
             <div class="sidebar__menu-contents">
-              <i class="close" class="ri-close-line"></i>
-              <hr />
-              <span>Online Shop</span>
+              <i class="ri-close-line close"></i>
+              <br />
+              <span>Immigration of New Zealand</span>
               <span>Twitter</span>
               <span>Instagram</span>
               <span>YouTube</span>
@@ -29,10 +43,46 @@
             </div>
           </div>
         </aside>
+        <picture class="head__imgcontainer"
+          ><img class="head__img" src="img/main__img1.jpg" alt=""
+        /></picture>
+        <div class="head__message">
+          <h1 class="main__text">Welcome <br />to My New Zealand Life</h1>
+        </div>
       </section>
 
-      <section></section>
-      <section></section>
+      <section class="introduce">
+        <div class="video__container">
+          <video class="flag" src="img/newzealand.mp4" autoplay loop></video>
+        </div>
+        <div class="letter__box">
+          <h2 class="fadein">New Zealand를 소개합니다 !</h2>
+          <h4 class="fadein">
+            뉴질랜드(New Zealand) 또는 아오테아로아(Aotearoa)는 오세아니아에
+            위치한 영연방 왕국입니다. <br />수도는 북섬의 웰링턴이지만, 최대
+            도시이자 경제의 중심지는 북섬의 오클랜드입니다.
+          </h4>
+          <span class="fadein"
+            >그 중 웰링턴은 뉴질랜드의 수도로 의회와 주요 정부 기관이 밀집해
+            있습니다.</span
+          >
+          <span class="fadein"
+            >자연·관광·해안가·항구 풍경과 마운트 빅토리아 전망, 테파파
+            국립박물관·케이블카 등이 인기 명소 !</span
+          >
+          <span class="fadein"
+            >웰링턴은 저에게 제 2의 고향과 같은 곳입니다.</span
+          >
+          <span class="fadein">대표사진</span>
+          <div class="introduce__pictures fadein">
+            <img class="fadein" src="img/Mt_cook.jpg" alt="" />
+            <img class="fadein" src="img/marlboro.jpeg" alt="" />
+            <img class="fadein" src="img/stars.webp" alt="" />
+          </div>
+        </div>
+        <div></div>
+      </section>
+      <section class=""></section>
       <section></section>
     </main>
   </body>

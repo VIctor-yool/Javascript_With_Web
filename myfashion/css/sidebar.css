@@ -1,0 +1,91 @@
+.entrance {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid red;
+
+  position: relative;
+}
+
+.sidebar {
+  width: 30%;
+  height: 100%;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.sidebar > .hamburger {
+  font-size: 30px;
+  padding: 15px;
+  color: #403632;
+  background-color: transparent;
+  border: 1px solid #403632;
+  border-radius: 50%;
+  position: fixed;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.sidebar > .hamburger:hover {
+  background-color: #403632;
+  color: #d5edeb;
+}
+
+/* 햄버거 버튼 가리기(애니메이션 필요 없으면 display로 ok) */
+.hamburger.is-hidden {
+  display: none;
+}
+
+.sidebar__menu {
+  width: 100%;
+  height: 100%;
+  background-color: #403632;
+  padding: 130px 32px 32px 32px;
+  position: relative;
+
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+
+.sidebar__menu-contents {
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__menu-contents > .close {
+  font-size: 30px;
+  padding: 15px;
+  color: #d5edeb;
+  background-color: #403632;
+  border: 1px solid #d5edeb;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 0.3s;
+}
+
+.sidebar__menu-contents > .close:hover {
+  background-color: #d5edeb;
+  color: #403632;
+}
+
+.sidebar__menu-contents span {
+  font-size: 30px;
+  font-weight: bold;
+  color: #d5edeb;
+}
+.sidebar__menu-contents span:hover {
+  cursor: pointer;
+}
