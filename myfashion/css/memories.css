@@ -1,0 +1,57 @@
+.memories {
+  width: 100vw;
+}
+
+.memories__container {
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.memories__left {
+  width: 50%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.memories__left-photobox {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.memories__right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+}
+
+.memories__right-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(103, 190, 91);
+
+  position: absolute;
+  top: 0px;
+  left: 22%;
+}
+
+.memories__photocontainer {
+  width: 35%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 120px 15px 15px 15px;
+  gap: 30px;
+}
+
+.memories__right-photobox {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+}

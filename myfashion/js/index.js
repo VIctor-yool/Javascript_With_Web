@@ -126,37 +126,49 @@ close.addEventListener("click", () => {
   });
 });
 
-const fadeIns = document.querySelectorAll(".fadein");
+const obs = new IntersectionObserver(
+  (entries, me) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        entry.target.animate(
+          [
+            {
+              opacity: 0,
+              transform: "translateX(-2rem) translateY(4rem)",
+              filter: "blur(.4rem)",
+            },
+            {
+              opacity: 1,
+              transform: "translateX(0) translateY(0)",
+              filter: "blur(0)",
+            },
+          ],
+          {
+            duration: 1500,
+            easing: "ease",
+            fill: "forwards",
+            delay: 230 * i,
+          }
+        );
+        me.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+    rootMargin: "0px 0px 20% 0px",
+  }
+);
+fadeIns.forEach((el) => obs.observe(el));
 
-const obs = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      entry.target.animate(
-        [
-          {
-            opacity: 0,
-            transform: "translateX(-2rem) translateY(4rem)",
-            filter: "blur(.4rem)",
-          },
-          {
-            opacity: 1,
-            transform: "translateX(0) translateY(0)",
-            filter: "blur(0)",
-          },
-        ],
-        {
-          duration: 800,
-          easing: "ease",
-          fill: "forwards",
-          delay: 150 * i,
-        }
-      );
-      observer.unobserve(entry.target);
-    }
+import { memoriesMainImage, memoriesThumbImages } from "./memories.js";
+import { fadeIns } from "./introduce.js";
+
+// memories mainImage changer
+
+memoriesThumbImages.forEach((memoriesThumbImage) => {
+  memoriesThumbImage.addEventListener("mouseover", (event) => {
+    memoriesMainImage.src = event.target.src;
+    memoriesMainImage.animate({ opacity: [0, 1] }, 500);
   });
-  
-    {threshold: 0.15, rootMargin:
-    "0px 0px 10% 0px"}
-
 });
-

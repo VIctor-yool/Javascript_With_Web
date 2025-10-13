@@ -1,15 +1,15 @@
 body {
-  width: 1836px;
-  max-width: 1860px;
-
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 #bodyImg {
   position: fixed;
-  width: 1836px;
+  width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: 0;
+  z-index: -1;
   filter: blur(4px);
 }
