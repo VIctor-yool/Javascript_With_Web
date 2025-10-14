@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index5.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>회원가입</h1>
+        <div>
+          <span>회원가입 정보를</span>
+          <span>입력해주세요</span>
+        </div>
+        <div>
+          <input id="id" placeholder="아이디를 입력해주세요." type="text" />
+          <button disabled>중복확인</button>
+          <div>
+            <span id="idstr"><i class="ri-check-line"></i> 영문 / 숫자</span>
+            <span id="idlength"><i class="ri-check-line"></i> 6~20자 내외</span>
+          </div>
+        </div>
+
+        <input
+          id="password"
+          placeholder="비밀번호를 입력해주세요."
+          type="password"
+        />
+        <div id="pwdcontainer">
+          <span id="pwdstr"><i class="ri-check-line"></i> 영문</span>
+          <span id="pwdnum"><i class="ri-check-line"></i> 숫자</span>
+          <span id="pwdsc"
+            ><i class="ri-check-line"></i> 특수문자 (!@$%^*_+~)</span
+          >
+          <span id="pwdlength"><i class="ri-check-line"></i> 8~20자 내외</span>
+        </div>
+        <div>
+          <input id="email" placeholder="이메일을 입력해주세요." type="email" />
+          <span id="emailconf"><i class="ri-check-line"></i> 이메일 형식</span>
+        </div>
+        <button>휴대폰 인증</button>
+        <button id="conf" disabled>가입</button>
+      </article>
+    </main>
+  </body>
+</html>
