@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const a = Math.abs(-10); // 10
 const b = Math.PI; // 3.14
 const c = Math.round(3.6); // 반올림
@@ -15,3 +16,22 @@ function getRandomArbitrary(min, max) {
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+=======
+const a = Math.abs(-10); // 10
+const b = Math.PI; // 3.14
+const c = Math.round(3.6); // 반올림
+const d = Math.floor(3.6); // 내림
+const e = Math.ceil(3.6); // 올림
+
+const f = Math.random(); // 0~1 사이 랜덤 숫자
+
+// min~max 까지 돌려주는 랜덤 함수
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+//  min~max 까지 정수를 돌려주는 랜덤 함수
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+>>>>>>> 6b55506363a86fbcfb884087ed6fd698b85d59bd

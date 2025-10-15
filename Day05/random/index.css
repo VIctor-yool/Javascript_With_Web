@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #box {
   display: flex;
   flex-direction: column;
@@ -9,3 +10,16 @@
 #input {
   width: 250px;
 }
+=======
+#box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#input {
+  width: 250px;
+}
+>>>>>>> 6b55506363a86fbcfb884087ed6fd698b85d59bd

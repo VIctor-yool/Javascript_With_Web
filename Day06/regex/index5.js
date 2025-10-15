@@ -11,8 +11,8 @@ const pwdsc = document.querySelector("#pwdsc");
 const pwdlength = document.querySelector("#pwdlength");
 const pwdctn = document.querySelector("#pwdcontainer");
 
-const a = /^[a-zA-Z0-9]{6,20}$/;
-const b = /^[a-zA-Z0-9!@$%^*_+~]{8,20}$/;
+const a = /^[a-zA-Z0-9]{6,20}$/; // length
+const b = /^[a-zA-Z0-9!@$%^*_+~]{8,20}$/; // length
 const c = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 id.addEventListener("input", () => {
@@ -33,15 +33,15 @@ id.addEventListener("input", () => {
 
 pwd.addEventListener("input", () => {
   const { value } = pwd;
-  value.match(/[a-zA-Z]/)
+  value.match(/[a-zA-Z]+/)
     ? (pwdstr.style.color = "lightgreen")
     : (pwdstr.style.color = "black");
 
-  value.match(/[0-9]/)
+  value.match(/[0-9]+/)
     ? (pwdnum.style.color = "lightgreen")
     : (pwdnum.style.color = "black");
 
-  value.match(/[!@$%^*_+~]/)
+  value.match(/[!@$%^*_+~]+/)
     ? (pwdsc.style.color = "lightgreen")
     : (pwdsc.style.color = "black");
 
