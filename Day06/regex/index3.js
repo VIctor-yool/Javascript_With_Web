@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const a = /ca+t/; // a가 1개 이상 포함
 a.test("my caaaaat");
 
@@ -12,3 +13,19 @@ d.test("my new caaat"); // true
 
 const e = /ca{2,4}t/; // a가 반드시 2개, 3개, 4개 중에 포함
 d.test("my new caaat"); // true
+=======
+const a = /ca+t/; // a가 1개 이상 포함
+a.test("my caaaaat");
+
+const b = /ca?t/; // a가 optional[있어도 되고 없어도 되고]
+b.test("my new ct");
+
+const c = /ca{2}t/; // a가 반드시 2개
+c.test("my new caaat"); // false
+
+const d = /ca{2,}t/; // a 가 반드시 2개 이상 포함
+d.test("my new caaat"); // true
+
+const e = /ca{2,4}t/; // a가 반드시 2개, 3개, 4개 중에 포함
+d.test("my new caaat"); // true
+>>>>>>> 958b3a85145d735581aedea7a6ac4bfb65245264
