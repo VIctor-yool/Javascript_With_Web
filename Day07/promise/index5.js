@@ -12,6 +12,28 @@
 //   );
 // });
 
+// 한 번 넣어봐야함
+
+//  startbtn.addEventListener("click", () => {
+//   // 1등 출력
+//   Promise.race([horse(), turtle(), rabbit(), snail(), snake(), cat()]).then(
+//     (v) => console.log(`1등: ${v}`)
+//   );
+
+//   // 3등까지 출력용 배열
+//   const results = [];
+
+//   // 모든 참가자 실행, 도착할 때마다 결과 저장
+//   [horse, turtle, rabbit, snail, snake, cat].forEach((racer) => {
+//     racer().then((v) => {
+//       results.push(v);
+//       if (results.length <= 3) {
+//         console.log(`${results.length}등: ${v}`);
+//       }
+//     });
+//   });
+// });
+
 // const horse = () =>
 //   new Promise((resolve) =>
 //     setTimeout(
